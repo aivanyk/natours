@@ -96,6 +96,7 @@ app.all('*', (req, res, next) => {
   next(new AppError(`cannot find ${req.originalUrl}`, 404));
 });
 
+//hello
 app.use(globalErrorHandler);
 // app.use((err, req, res, next) => {
 //   console.log(err.stack);
